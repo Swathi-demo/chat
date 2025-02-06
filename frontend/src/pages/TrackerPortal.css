@@ -1,0 +1,117 @@
+/* TrackerPage.css */
+
+.tracker-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .tracker-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d9534f; /* Red color for title */
+    margin-bottom: 20px;
+  }
+  
+  .tracker-input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .tracker-input {
+    width: 70%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tracker-input:focus {
+    outline: none;
+    border-color: #d9534f; /* Red border on focus */
+  }
+  
+  .tracker-button {
+    background-color: #d9534f; /* Red button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tracker-button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+  
+  .tracker-helper-text {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Progress bar */
+  .progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .progress-step .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .progress-step.active .icon-wrapper {
+    border-color: #d9534f;
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .step-icon {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .step-label {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    color:black;
+  }
+  
+  .line {
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    width: 50px;
+    height: 2px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+  
+  .progress-step.active ~ .line {
+    background-color: #d9534f;
+  }
+  

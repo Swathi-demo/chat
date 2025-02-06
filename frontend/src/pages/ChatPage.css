@@ -1,0 +1,81 @@
+/* Style the container with a background image */
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: url('/public/images/chatwallpaper.jpg') no-repeat center center / cover; /* Add your image here */
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #fff; /* White text for better visibility */
+    margin-bottom: 10px;
+  }
+  
+  .chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-message {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 70%;
+    display: inline-block;
+  }
+  
+  .chat-message.sent {
+    align-self: flex-start;
+    background-color: #daf8e3;
+    text-align: left;
+  }
+  
+  .chat-message.received {
+    align-self: flex-end;
+    background-color: #f1f0f0;
+    text-align: right;
+  }
+  
+  .loading {
+    color: #888;
+    font-style: italic;
+    text-align: right;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-input button:hover {
+    background-color: #0056b3;
+  }
+  
