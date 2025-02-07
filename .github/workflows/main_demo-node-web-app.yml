@@ -1,0 +1,29 @@
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+env:
+  AZURE_WEBAPP_NAME: mern-app-backend    # set this to your application's name   
+  NODE_VERSION: '20.x'                # set this to the node version to use
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+    - name: 'Deploy to Azure WebApp'
+      id: deploy-to-webapp
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_NODE_WEBAPP_PUBLISH_PROFILE }}
