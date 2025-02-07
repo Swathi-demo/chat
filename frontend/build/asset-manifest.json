@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a5f93ed.css",
+    "main.js": "/static/js/main.7ad1ef29.js",
+    "static/media/chatwallpaper.jpg": "/static/media/chatwallpaper.0a16ab07f1634983c934.jpg",
+    "static/media/redux.cjs": "/static/media/redux.7edfc461ab353f1712ab.cjs",
+    "index.html": "/index.html",
+    "static/media/index.cjs": "/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.9a5f93ed.css.map": "/static/css/main.9a5f93ed.css.map",
+    "main.7ad1ef29.js.map": "/static/js/main.7ad1ef29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a5f93ed.css",
+    "static/js/main.7ad1ef29.js"
+  ]
+}
