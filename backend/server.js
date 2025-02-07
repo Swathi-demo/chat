@@ -44,13 +44,13 @@ app.post('/api/messages', (req, res) => {
   res.status(200).send('Bot endpoint working!');
 });
 
-app.use(express.static(path.join(__dirname, '..', 'frontend', 'build')));
+/*app.use(express.static(path.join(__dirname, '..', 'frontend', 'build')));
 
 // 5) CATCH-ALL FOR REACT ROUTER
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'frontend', 'build', 'index.html'));
 });
-
+*/
 
 
 
